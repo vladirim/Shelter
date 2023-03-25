@@ -22,7 +22,7 @@ $fontfamily: "Georgia";
 $minwidth: 320;
 $mw: 1280;
 $md1: 1200;
-$md2: 915;
+$md2: 850;
 $md3: 479.98;
 //</ПЕРЕМЕННЫЕ>
 
@@ -100,7 +100,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	min-height: calc(100vh - var(--nav-vertical-size));
   	background: url("../../../img/not-only-block/not-only-background.png") no-repeat center;
   	background-position: center calc(-1 * var(--nav-vertical-size));
-	margin: 0px 0px 80px 0px;
 }
 .not-only__wrapper {
 	display: flex;
@@ -152,22 +151,44 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 //<ABOUT>
 .about {
+	padding: 80px 0px;
 }
 .about__wrapper {
 	display: flex;
 	width: $md2+px;
 }
 .about-picture {
+	padding: 0px 120px 0px 0px;
 }
 .about__img {
 }
 .about-description {
+	padding: 15px 0px 0px 0px;
 }
 .about__title {
+	max-width: 370px;
+	margin: 0px 0px 25px 0px;
 }
 .section__title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #545454;
 }
 .about__text {
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+	color: #4C4C4C;
+	margin: 0px 0px 25px 0px;
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+
 }
 //</ABOUT>
 //===================================================
