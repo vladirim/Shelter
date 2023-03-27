@@ -427,3 +427,54 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.06em;
   color: #545454;
 }
+
+.in-addition {
+  background-color: #F6F6F6;
+}
+
+.in-addition-wrapper {
+  width: 915px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0px 100px 0px;
+}
+
+.in-addition-pic {
+  margin: 12px 30px 0px 0px;
+}
+
+.in-addition__title {
+  max-width: 300px;
+  margin: 0px 0px 20px 0px;
+}
+
+.in-addition__bank-name {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0px 0px 20px 0px;
+}
+
+.in-addition__card-number {
+  max-width: 350px;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  background: #F1CDB3;
+  border-radius: 9px;
+  padding: 10px 15px 10px 60px;
+  background: url("../../../img/in-addition/icons/01.svg") no-repeat 15px center #F1CDB3;
+  margin: 0px 0px 20px 0px;
+}
+
+.in-addition__legal-info {
+  max-width: 380px;
+  font-family: "Arial";
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  color: #B2B2B2;
+}
