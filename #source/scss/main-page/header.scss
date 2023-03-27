@@ -1,6 +1,6 @@
 .header {
     height: var(--nav-vertical-size);
-  	background: url("../../../img/not-only-block/not-only-background.png") no-repeat top;
+  	background: url("../../img/not-only-block/not-only-background.png") no-repeat top;
     background-size: 100%;
     padding: 60px 0px 60px 0px;
 }
@@ -9,6 +9,14 @@
     justify-content: space-between;
 }
 .header-logo {
+    &:hover {
+        .header-logo__title {
+            color: #ffa86a;
+        }
+        .header-logo__text{
+            color: #cecece;
+        }
+    }
 }
 .header-logo__title {
     font-style: normal;
@@ -57,4 +65,9 @@
         color: #FAFAFA;
         border-bottom: 3px solid #F1CDB3;
     }
+    &:active {
+        color: #FAFAFA;
+        border-bottom: 3px solid #F1CDB3;
+    }
+
 }
