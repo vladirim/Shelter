@@ -1,0 +1,69 @@
+.footer{
+    background: url("../../img/footer/footer-background.png") no-repeat top;
+    background-size: 100%;
+}
+.container {
+}
+.wrapper {
+}
+.footer-wrapper {
+}
+.footer-columns {
+    display: flex;
+    padding: 40px 0px 0px 0px;
+    justify-content: space-between;
+}
+.footer-questions {
+    padding: 16px 0px 55px 0px;
+    max-width: 280px;
+}
+.footer-title {
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin: 0px 0px 40px 0px;
+}
+.footer-questions__title {
+}
+.footer-visit__title {
+    margin: 0px 0px 35px 0px;
+}
+.footer-link{
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    &:hover {
+        color: #FDDCC4;
+    }
+}
+.footer__email {
+    background: url("../../img/footer/icons/01.svg") left no-repeat;
+    padding: 0px 0px 0px 60px;
+    margin: 0px 0px 44px 0px;
+    height: 32px;
+}
+.footer__tel {
+    background: url("../../img/footer/icons/02.svg") left no-repeat;
+    padding: 0px 0px 0px 60px;
+    height: 32px;
+}
+.footer-visit {
+    padding: 16px 0px 55px 0px;
+    max-width: 302px;
+}
+.footer__location {
+    background: url("../../img/footer/icons/03.svg") left 5px no-repeat;
+    padding: 0px 0px 0px 42px;
+    margin: 0px 0px 30px 0px;
+    &:last-child {
+        margin: 0px 0px 0px 0px;
+        background: url("../../img/footer/icons/03.svg") left no-repeat;
+        height: 32px;
+    }
+    cursor: pointer;
+}
+.footer-picture {
+    max-height: 310px;
+}
