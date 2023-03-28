@@ -46,6 +46,7 @@ html,body{
 	min-width: $minwidth;
 	position: relative;
 	color: #000;
+	scroll-behavior: smooth;
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -100,7 +101,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .our-pets__title {
 	text-align: center;
-	padding: 80px 0px 45px 0px;
+	padding: 80px 0px 60px 0px;
 }
 .section__title {
 	font-style: normal;
@@ -115,10 +116,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .cards-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .our-friends-card {
 	background-color: #FAFAFA;
 	border-radius: 9px;
+	margin: 0px 0px 30px 0px;
 	cursor: pointer;
 	&:hover {
 		background-color: #FFFFFF;
@@ -155,6 +158,45 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	&:hover {
 		background-color: #F1CDB3;
 	}
+}
+
+.arrow-container {
+	display: flex;
+	justify-content: center;
+	padding: 33px 0px 100px 0px;
+}
+.arrow {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: #F6F6F6;
+    border-radius: 50%;
+    border: 2px solid #F1CDB3;
+    cursor: pointer;
+	margin: 0px 20px 0px 0px;
+	&:hover {
+		background-color: #F1CDB3;
+	}
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+}
+.arrow-prev {
+	border: 2px solid #CDCDCD;
+	&:hover {
+		background-color: #F6F6F6;
+	}
+}
+.arrow-number {
+	background-color: #F1CDB3;
+	font-size: 20px;
+	&:hover {
+		color: #F6F6F6;
+	}
+}
+.arrow-next {
 }
 //===================================================
 //</ОСНОВНОЙ БЛОК>
