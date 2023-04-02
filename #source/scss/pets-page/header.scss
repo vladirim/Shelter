@@ -23,6 +23,7 @@
     letter-spacing: 0.06em;
     color: #545454;
     margin: 0px 0px 10px 0px;
+    transition: .3s;
 }
 .header-logo__text {
     font-family: 'Arial';
@@ -33,6 +34,7 @@
     letter-spacing: 0.1em;
     color: #292929;
     padding: 0px 0px 0px 4px;
+    transition: .3s;
 }
 .header-nav {
     padding: 16px 0px 0px 0px;
@@ -55,6 +57,7 @@
     line-height: 24px;
     color: #545454;
     cursor: pointer;
+    transition: .3s;
     &:hover{
         color: #292929;
     }
