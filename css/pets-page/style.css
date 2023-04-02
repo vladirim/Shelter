@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper {
   width: 1200px;
+  margin: 0 auto;
   min-height: 100%;
   overflow: hidden;
 }
@@ -128,6 +129,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.06em;
   color: #545454;
   margin: 0px 0px 10px 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-logo__text {
@@ -139,6 +142,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
   color: #292929;
   padding: 0px 0px 0px 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-nav {
@@ -167,6 +172,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   color: #545454;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .header-nav__link:hover {
   color: #292929;
@@ -217,6 +224,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .footer-link:hover {
   color: #FDDCC4;
@@ -290,9 +299,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 9px;
   margin: 0px 0px 30px 0px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .our-friends-card:hover {
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .our-friends-card:hover .card-btn {
   background-color: #F1CDB3;
@@ -324,6 +337,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 42px;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .card-btn:hover {
   background-color: #F1CDB3;
@@ -355,6 +370,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   border: 2px solid #F1CDB3;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin: 0px 20px 0px 0px;
 }
 .arrow:hover {
@@ -366,6 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .arrow-prev {
   border: 2px solid #CDCDCD;
+  pointer-events: none;
 }
 .arrow-prev:hover {
   background-color: #F6F6F6;

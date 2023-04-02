@@ -133,6 +133,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: #F1CDB3;
 	padding: 16px 45px;
 	border-radius: 50px;
+	transition: .3s;
 	&:hover {
 		background-color: #FDDCC4;
 	}
@@ -221,11 +222,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     border-radius: 50%;
     border: 2px solid #F1CDB3;
     cursor: pointer;
+	transition: .3s;
 	&:hover {
 		background-color: #F1CDB3;
 	}
 }
 .arrow-prev {
+	pointer-events: none;
 }
 .arrow-next {
 }
@@ -238,8 +241,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: #FAFAFA;
 	border-radius: 9px;
 	cursor: pointer;
+	transition: .3s;
 	&:hover {
 		background-color: #FFFFFF;
+		box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 		.card-btn {
 			background-color: #F1CDB3;
 		}
@@ -268,6 +273,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding: 15px 42px;
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
+	transition: .3s;
 	&:hover {
 		background-color: #F1CDB3;
 	}
@@ -366,6 +372,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background: url("../../img/in-addition/icons/01.svg") no-repeat 15px center #F1CDB3;
 	margin: 0px 0px 20px 0px;
 	cursor: pointer;
+	transition: .3s;
 	&:hover {
 		background-color: #FDDCC4;
 	}

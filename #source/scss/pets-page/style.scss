@@ -69,6 +69,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 //<ОБОЛОЧКА>
 .wrapper {
 	width: $md1+px;
+	margin: 0 auto;
 	min-height: 100%;
 	overflow: hidden;
 }
@@ -123,8 +124,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	border-radius: 9px;
 	margin: 0px 0px 30px 0px;
 	cursor: pointer;
+	transition: .3s;
 	&:hover {
 		background-color: #FFFFFF;
+		box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 		.card-btn {
 			background-color: #F1CDB3;
 		}
@@ -155,6 +158,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding: 15px 42px;
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
+	transition: .3s;
 	&:hover {
 		background-color: #F1CDB3;
 	}
@@ -175,6 +179,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     border-radius: 50%;
     border: 2px solid #F1CDB3;
     cursor: pointer;
+	transition: .3s;
 	margin: 0px 20px 0px 0px;
 	&:hover {
 		background-color: #F1CDB3;
@@ -185,6 +190,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .arrow-prev {
 	border: 2px solid #CDCDCD;
+	pointer-events: none;
 	&:hover {
 		background-color: #F6F6F6;
 	}
