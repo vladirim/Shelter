@@ -1,0 +1,210 @@
+//<МИКСИНЫ>
+@mixin flexbox(){display: -webkit-box;display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; font-size: 0;}
+@mixin anim($time, $delay){-webkit-transition: all $time ease $delay; -moz-transition: all $time ease $delay; -ms-transition: all $time ease $delay; -o-transition: all $time ease $delay; transition: all $time ease $delay;}
+@mixin scale($num) {-moz-transform: scale($num); -ms-transform: scale($num); -webkit-transform: scale($num); -o-transform: scale($num); transform: scale($num);}
+@mixin rotate($deg) {-moz-transform: rotate($deg); -ms-transform: rotate($deg); -webkit-transform: rotate($deg); -o-transform: rotate($deg); transform: rotate($deg);}
+//</МИКСИНЫ>
+
+//<ШРИФТЫ>
+
+//<Подключаем шрифты>
+
+//</Подключаем шрифты>
+
+//<Шрифт по умолчанию>
+$fontfamily: "Georgia";
+//</Шрифт по умолчанию>
+//</ШРИФТЫ>
+
+//<ПЕРЕМЕННЫЕ>
+$minwidth: 320;
+$mw: 1280;
+$md1: 1200;
+$md2: 767.98;
+$md3: 479.98;
+//</ПЕРЕМЕННЫЕ>
+
+//<ОБНУЛЕНИЕ ОБЩИЕ ПАРАМЕТРЫ>
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside,section{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	min-width: $minwidth;
+	position: relative;
+	color: #000;
+	scroll-behavior: smooth;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	font-family: $fontfamily;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: $fontfamily;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+//</ОБНУЛЕНИЕ ОБЩИЕ ПАРАМЕТРЫ>
+
+//<ОБОЛОЧКА>
+.wrapper {
+	width: $md1+px;
+	margin: 0 auto;
+	min-height: 100%;
+	overflow: hidden;
+}
+//</ОБОЛОЧКА>
+
+//<ОСНОВНАЯ СЕТКА>
+.container {
+	max-width: $mw+px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width:$md2+px) {max-width: 750px;}
+	@media (max-width:$md3+px) {max-width: none; padding: 0 10px;}
+}
+//</ОСНОВНАЯ СЕТКА>
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+@import "header.scss";
+@import "footer.scss";
+//@import "forms.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+
+//<ОСНОВНОЙ БЛОК>
+.main {
+	background: #F6F6F6;
+}
+.container {
+}
+.our-pets {
+
+}
+.our-pets__title {
+	text-align: center;
+	padding: 80px 0px 60px 0px;
+}
+.section__title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #545454;
+}
+.our-friends__cards {
+}
+.cards-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.our-friends-card {
+	background-color: #FAFAFA;
+	border-radius: 9px;
+	margin: 0px 0px 30px 0px;
+	cursor: pointer;
+	transition: .3s;
+	&:hover {
+		background-color: #FFFFFF;
+		box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+		.card-btn {
+			background-color: #F1CDB3;
+		}
+	}
+}
+.our-friends-card__picture {
+	margin: 0px 0px 28px 0px;
+}
+.card__img {
+}
+.our-friends-card__title {
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #545454;
+	padding: 0px 0px 45px 0px;
+}
+.our-friends-card__button {
+	text-align: center;
+	margin: 0px 0px 45px 0px;
+}
+.card-btn {
+	font-size: 17px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #292929;
+	padding: 15px 42px;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	transition: .3s;
+	&:hover {
+		background-color: #F1CDB3;
+	}
+}
+
+.arrow-container {
+	display: flex;
+	justify-content: center;
+	padding: 33px 0px 100px 0px;
+}
+.arrow {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: #F6F6F6;
+    border-radius: 50%;
+    border: 2px solid #F1CDB3;
+    cursor: pointer;
+	transition: .3s;
+	margin: 0px 20px 0px 0px;
+	&:hover {
+		background-color: #F1CDB3;
+	}
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+}
+.arrow-prev {
+	border: 2px solid #CDCDCD;
+	pointer-events: none;
+	&:hover {
+		background-color: #F6F6F6;
+	}
+}
+.arrow-number {
+	background-color: #F1CDB3;
+	font-size: 20px;
+	&:hover {
+		color: #F6F6F6;
+	}
+}
+.arrow-next {
+}
+//===================================================
+//</ОСНОВНОЙ БЛОК>
+
+
