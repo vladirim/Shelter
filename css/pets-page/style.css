@@ -383,6 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .arrow-prev {
   border: 2px solid #CDCDCD;
+  pointer-events: none;
 }
 .arrow-prev:hover {
   background-color: #F6F6F6;

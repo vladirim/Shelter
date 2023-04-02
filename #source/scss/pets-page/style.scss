@@ -190,6 +190,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .arrow-prev {
 	border: 2px solid #CDCDCD;
+	pointer-events: none;
 	&:hover {
 		background-color: #F6F6F6;
 	}
